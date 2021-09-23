@@ -22,3 +22,9 @@ chmod +x docker-compose-darwin-amd64;
 mv docker-compose-darwin-amd64 ~/.docker/cli-plugins/docker-compose;
 
 cd $wd;
+
+which docker;
+if [ "$status" = "1" ]
+    echo "set PATH \$HOME/.docker/bin \$PATH" >> ~/.config/fish/config.fish;
+    source ~/.config/fish/config.fish;
+end
