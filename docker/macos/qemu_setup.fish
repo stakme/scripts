@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
-mkdir -p ~/.docker-host;
-cd ~/.docker-host;
+mkdir -p ~/.dockerhost;
+cd ~/.dockerhost;
 
 # utils
 brew install qemu gnupg coreutils;
