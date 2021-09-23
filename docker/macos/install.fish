@@ -1,6 +1,5 @@
 #!/usr/bin/env fish
 
-set wd (pwd);
 cd $TMPDIR;
 
 mkdir -p ~/.docker/bin;
@@ -20,8 +19,6 @@ mv docker/cli-plugins/* ~/.docker/cli-plugins/;
 curl -OL https://github.com/docker/compose-cli/releases/download/v2.0.0-rc.2/docker-compose-darwin-amd64
 chmod +x docker-compose-darwin-amd64;
 mv docker-compose-darwin-amd64 ~/.docker/cli-plugins/docker-compose;
-
-cd $wd;
 
 which docker;
 if [ "$status" = "1" ]
