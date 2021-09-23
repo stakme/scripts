@@ -1,12 +1,7 @@
 #!/usr/bin/env fish
 
-set output $argv[1];
-if [ "$output" = "" ]
-    echo "FAILED; output path is required.";
-    exit 1;
-end
-echo "output path: $output"
-cd (dirname $output);
+mkdir -p ~/.docker-host;
+cd ~/.docker-host;
 
 # utils
 brew install qemu gnupg coreutils;
