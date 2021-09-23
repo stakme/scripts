@@ -15,5 +15,5 @@ mv docker/cli-plugins/* ~/.docker/cli-plugins/;
 # docker compose
 curl -OL https://github.com/docker/compose-cli/releases/download/v2.0.0-rc.2/docker-compose-darwin-amd64
 chmod +x docker-compose-darwin-amd64;
-mv docker-compose-darwin-amd64 ~/.docker/bin/cli-plugins/docker-compose;
+mv docker-compose-darwin-amd64 ~/.docker/cli-plugins/docker-compose;
 
