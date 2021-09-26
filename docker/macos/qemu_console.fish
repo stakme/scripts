@@ -10,4 +10,8 @@ qemu-system-x86_64 \
     -machine type=q35,accel=hvf \
     -smp 2 \
     -drive file=ubuntu-server.qimg,if=virtio \
-    -cpu host;
+    -cpu host \
+    -device virtio-serial \
+    -net user,hostfwd=tcp::10022-:22 \
+    -net nic \
+;

@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-set -Ux DOCKER_HOST ssh://stakme@localhost:10022
+set -Ux DOCKER_HOST ssh://docker@localhost:10022
 
 cd ~/.dockerhost;
 qemu-system-x86_64 \
