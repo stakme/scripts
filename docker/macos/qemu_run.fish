@@ -1,6 +1,7 @@
 #!/usr/bin/env fish
 
-set -Ux DOCKER_HOST ssh://docker@localhost:10022
+docker context create dockerhost --docker host=ssh://docker@localhost:10022;
+docker context use dockerhost;
 
 cd ~/.dockerhost;
 qemu-system-x86_64 \
