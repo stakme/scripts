@@ -9,6 +9,5 @@ qemu-system-x86_64 \
     -device usb-tablet \
     -machine type=q35,accel=hvf \
     -smp 2 \
-    -cdrom ubuntu-server-amd64.iso \
     -drive file=ubuntu-server.qimg,if=virtio \
     -cpu host;
