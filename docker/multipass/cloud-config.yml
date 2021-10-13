@@ -1,0 +1,16 @@
+#cloud-config
+timezone: Asia/Tokyo
+locale: ja_JP.utf8
+
+groups:
+    - docker
+system_info:
+    default_user:
+        groups: [docker]
+
+package_upgrade: true
+packages:
+    - docker.io
+    - avahi-daemon
+ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBAK2dUjVdeA6/FfcfmsYGCNinLjMa71Li6AlhjsVd1ajWgOWwEanUJ9Yxbg+p77npfZOlosud+ZIuDDGR2aVi74Ido6cGJXYBRbLhB2G1hqMoCPhxmMh6aaNrL50047TJNBBcKY+WkWSYDWoKjJeNXptlrD8Dnf2NI09Ai8NAMxmagW6OjIRfsQCGT3ESc/bCMP+HrzspImhCJ/51bYiRZdGPIQQDS4qZqTQvh2Yi2WCUT5bHW3eWtnSm5rdxnAkJEnwvX47Ccv3NM/G2HV4IrHic4RwKDQ28M89+oP2nmhCG8hxhxkrx/8O7mHFljtTcvD2k2GTn3ZK/l1WB0Kzh stakme@air.stak.me
